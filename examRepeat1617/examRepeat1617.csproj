@@ -173,7 +173,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ApplicationUsers\201801101130022_initial migrations.cs" />
+    <Compile Include="Migrations\ApplicationUsers\201801101130022_initial migrations.Designer.cs">
+      <DependentUpon>201801101130022_initial migrations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationUsers\Configuration.cs" />
+    <Compile Include="Migrations\AttendDBContext\201801101128214_initial migrations attend.cs" />
+    <Compile Include="Migrations\AttendDBContext\201801101128214_initial migrations attend.Designer.cs">
+      <DependentUpon>201801101128214_initial migrations attend.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AttendDBContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Data\AttendDBContext.cs" />
@@ -254,6 +262,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\ApplicationUsers\201801101130022_initial migrations.resx">
+      <DependentUpon>201801101130022_initial migrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\AttendDBContext\201801101128214_initial migrations attend.resx">
+      <DependentUpon>201801101128214_initial migrations attend.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
