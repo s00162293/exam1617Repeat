@@ -1,0 +1,59 @@
+﻿@model IEnumerable<examRepeat1617.Models.Attendance>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.associatedStudent.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.associatedSubject.SubjectId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttendanceDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Present)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.associatedStudent.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.associatedSubject.SubjectId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AttendanceDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Present)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.AttendanceId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.AttendanceId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.AttendanceId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

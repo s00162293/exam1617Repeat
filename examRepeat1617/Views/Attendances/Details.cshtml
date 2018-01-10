@@ -1,0 +1,58 @@
+﻿@model examRepeat1617.Models.Attendance
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Attendance</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.associatedStudent.FirstName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.associatedStudent.FirstName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.associatedSubject.SubjectId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.associatedSubject.SubjectId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.AttendanceDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.AttendanceDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Present)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Present)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.AttendanceId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
