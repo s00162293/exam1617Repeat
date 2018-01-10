@@ -9,6 +9,9 @@ namespace examRepeat1617.Models
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        public string studentId { get; set; }
+        public int lecturerId { get; set; }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -20,6 +23,8 @@ namespace examRepeat1617.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+       
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
