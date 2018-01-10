@@ -176,6 +176,12 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Data\Attendance.cs" />
+    <Compile Include="Models\Data\Lecturer.cs" />
+    <Compile Include="Models\Data\LecturerSubject.cs" />
+    <Compile Include="Models\Data\Student.cs" />
+    <Compile Include="Models\Data\StudentSubject.cs" />
+    <Compile Include="Models\Data\Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
