@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace examRepeat1617.Models.students
+namespace examRepeat1617.Models
 {
 
     [Table("StudentSubject")]
